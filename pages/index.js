@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import Button, {greeting as mujPozdrav} from './../components/Button'
+import Button, {greeting as mujPozdrav} from '../components/Button.'
+import Image from '../components/Image'
 
 const HomePage = () => {
     return <div>
@@ -9,6 +10,8 @@ const HomePage = () => {
         <Button />
         <Button children="Čudlík 4" />
         {mujPozdrav("lidi")}
+        <Image />
+        <Image src="https://homoky-files.fra1.digitaloceanspaces.com/2020/nL2ckrgYNz.png" width={300} isSquare />
         </div>
   }
   
