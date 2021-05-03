@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Button, {greeting as mujPozdrav} from '../components/Button.'
 import Image from '../components/Image'
+import Counter from './../components/Counter'
+
 
 const HomePage = () => {
     return <div>
@@ -13,6 +15,10 @@ const HomePage = () => {
         {mujPozdrav("lidi")}
         <Image />
         <Image src="https://homoky-files.fra1.digitaloceanspaces.com/2020/nL2ckrgYNz.png" width={300} isSquare />
+        <br />
+        <Counter />
+        <Counter />
+        <Counter />
         </div>
   }
   
