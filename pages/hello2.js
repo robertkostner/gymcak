@@ -3,16 +3,16 @@ import axios from 'axios';
 
 const HelloPage = ({title}) => {
     return <div>
-        <p>Welcome hello to {title}</p>
+        <p>Welcome HELLO 2 to {title}</p>
         <p><Link href="/"><a>Home page</a></Link></p>
         </div>
   }
   
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const res = await axios.get(`https://jsonplaceholder.typicode.com/todos/1`)
   const data = await res.data
 
-  console.log("Dotaz do databáze proběhl při dotazu")
+  console.log("Dotaz do databáze proběhl při buildu")
   
   if (!data) {
     return {
