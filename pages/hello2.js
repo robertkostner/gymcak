@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import axios from 'axios';
 
-const HelloPage = ({title}) => {
+const Hello2Page = ({title}) => {
     return <div>
         <p>Welcome HELLO 2 to {title}</p>
         <p><Link href="/"><a>Home page</a></Link></p>
@@ -28,4 +28,4 @@ export async function getStaticProps(context) {
   }
 }
 
-  export default HelloPage
+  export default Hello2Page
