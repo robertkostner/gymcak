@@ -1,9 +1,11 @@
 import {useState} from 'react'
+import Link from 'next/link';
 
 const Form = ( ) => {
     const [todos, setTodos] = useState(["Toto je můj první úkol", "Vynést koš", "Udělat ukol na zemák"])
 
     return <div>
+        <p><Link href="/"><a>Home page</a></Link></p>
         <h2>Naše úkoly (celkem mám {todos.length} úkolů)</h2>
 
         <form onSubmit={(e) => {
